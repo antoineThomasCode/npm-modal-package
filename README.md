@@ -38,7 +38,7 @@ const [isDisplayed, setModalDisplay] = useState(false)
 
  {isDisplayed ? (
     <Modal setModalState={setModalDisplay} title='My Modal original title'>
-    <p> A little paragraph in your modal </p>
+        <p> A little paragraph in my modal </p>
     </Modal>) : null}
 ```
 
