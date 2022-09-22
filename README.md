@@ -37,8 +37,8 @@ In your component, you have create a new state and use the modal component width
 const [isDisplayed, setModalDisplay] = useState(false)
 
  {isDisplayed ? (
-    <Modal setModalState={setModalDisplay} title='New employee added'>
-    <p> you can close the modal </p>
+    <Modal setModalState={setModalDisplay} title='My Modal original title'>
+    <p> A little paragraph in your modal </p>
     </Modal>) : null}
 ```
 
