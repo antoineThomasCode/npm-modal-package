@@ -30,7 +30,7 @@ import {useState} from 'react'
 import Modal from "at-modal-package"
 ```
 
-In your component, you have create a new state and use the modal component width props you need : 
+In your component, you have to create a new state and use the modal component width props you need : 
 
 ```
 //state for the modal 
