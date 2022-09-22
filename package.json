@@ -1,0 +1,58 @@
+{
+  "name": "at-npm-modal-package",
+  "version": "0.1.3",
+  "description": "A package width a modal component for React.js create width storybook.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": " SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-lib": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoineThomasCode/npm-modal-package.git"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "component", 
+    "package",
+    "npm",
+    "openclassrooms",
+    "StoryBook"
+  ],
+  "author": "Antoine Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antoineThomasCode/npm-modal-package/issues"
+  },
+  "homepage": "https://github.com/antoineThomasCode/npm-modal-package#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/manager-webpack4": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^2.79.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
