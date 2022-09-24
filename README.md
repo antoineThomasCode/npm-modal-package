@@ -55,7 +55,7 @@ const [isDisplayed, setModalDisplay] = useState(false)
 
 ```
 
-###Animations
+### Animations
 
 You can disable the animation when modal is opening. you'll have to disable the animation props which is 'true' by default : 
 
@@ -69,7 +69,7 @@ const [isDisplayed, setModalDisplay] = useState(false)
     </Modal>) : null}
 ```
 
-###Accessibility
+### Accessibility
 
 You can also disable the closing accessibility on ESC keyboard key. You'll have to disable the 'closeAccessibility' value which is on true by default : 
 
