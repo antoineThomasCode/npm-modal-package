@@ -17,7 +17,7 @@ stories.add('App', () => {
     return (
         <div className="App">
             {!isDisplayed ? (<button onClick={(e) => openModal(e)}>Display modale</button>) : null}
-            {isDisplayed ? (<Modal setModalState={setModalDisplay} title={'Je suis une modal'}>
+            {isDisplayed ? (<Modal setModalState={setModalDisplay}  title={'Je suis une modal'}>
                 <p>Avec un paragraphe</p>
             </Modal>) : null}
         </div>

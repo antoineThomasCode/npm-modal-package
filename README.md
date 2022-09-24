@@ -42,7 +42,46 @@ const [isDisplayed, setModalDisplay] = useState(false)
     </Modal>) : null}
 ```
 
-So you can custom Modal with the title props and in the children part you can put anything you want: simple paragraph, formular, images, button...
+You can add components in the modal width the children props : 
+
+```
+//state for the modal 
+const [isDisplayed, setModalDisplay] = useState(false)
+
+ {isDisplayed ? (
+    <Modal setModalState={setModalDisplay} title='My Modal original title'>
+        <p> HERE YOU CAN PUT CHILDREN ELEMENTS </p>
+    </Modal>) : null}
+
+```
+
+###Animations
+
+You can disable the animation when modal is opening. you'll have to disable the animation props which is 'true' by default : 
+
+```
+//state for the modal 
+const [isDisplayed, setModalDisplay] = useState(false)
+
+ {isDisplayed ? (
+    <Modal setModalState={setModalDisplay} title='My Modal original title' animation={false}>
+        <p> A little paragraph in my modal </p>
+    </Modal>) : null}
+```
+
+###Accessibility
+
+You can also disable the closing accessibility on ESC keyboard key. You'll have to disable the 'closeAccessibility' value which is on true by default : 
+
+```
+//state for the modal 
+const [isDisplayed, setModalDisplay] = useState(false)
+
+ {isDisplayed ? (
+    <Modal setModalState={setModalDisplay} title='My Modal original title' closeAccessibility={false}>
+        <p> A little paragraph in my modal </p>
+    </Modal>) : null}
+```
 
 ## Used Technologies / Dependencies
 
